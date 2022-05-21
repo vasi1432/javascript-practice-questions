@@ -1,6 +1,6 @@
-falsy or truthy value check
+1--falsy or truthy value check
 
 
 
-check datatype of input if array then print array instead of object
+2--check datatype of input if array then print array instead of object
 
