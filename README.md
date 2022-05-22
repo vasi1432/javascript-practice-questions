@@ -7,3 +7,10 @@
 
 
 3--sorting three numbers
+
+
+4--write a javascript conditional statement to find the largest of five
+      numbers
+
+5--write a javascript for loop that will iterate from 0 to 15. For each
+      iteration it will check if the current number is odd or even
