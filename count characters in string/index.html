@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>count characters in string</title>
+  </head>
+  <body></body>
+  <script>
+    let data = "aaaaabbcccddeeeeff";
+    let newdata = data.split("");
+
+    count = 1;
+    for (let i = 0; i < data.length; i++) {
+      if (newdata[i] === newdata[i + 1]) {
+        count++;
+      } else {
+        newdata.push(count + newdata[i]);
+        count = 1;
+      }
+    }
+    let result = newdata.join("");
+
+    console.log(result);
+  </script>
+</html>
