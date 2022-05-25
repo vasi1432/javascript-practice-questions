@@ -16,3 +16,5 @@
       iteration it will check if the current number is odd or even
 
 5--count duplicate characters of string
+
+6--push zero at the end of the array
