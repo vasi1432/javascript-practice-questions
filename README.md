@@ -15,6 +15,6 @@
 5--write a javascript for loop that will iterate from 0 to 15. For each
       iteration it will check if the current number is odd or even
 
-5--count duplicate characters of string
+6--count duplicate characters of string
 
-6--push zero at the end of the array
+7--push zero at the end of the array
