@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    //   INPUT
+    const int = "({[]}){()}[()]";
+    // create an empty stack to push the elements
+    const stack = [];
+    // create a count for output
+    let count = 0;
+    // start a for loop and iterate all the characters
+    for (let i = 0; i < int.length; i++) {
+      // if we got an opening bracket push it in stack
+      let top = stack[stack.length - 1];
+      if (int[i] == "(" || int[i] == "[" || int[i] == "{") {
+        stack.push(int[i]);
+        // if we got an opening bracket in stack and closing bracket in iteration thaan pop it from the stack
+      } else if (
+        (int[i] === `)` && top === `(`) ||
+        (int[i] === `]` && top === `[`) ||
+        (int[i] === `}` && top === `{`)
+      ) {
+        stack.pop();
+        //increase the count by two
+        count = count += 2;
+      }
+    }
+    console.log(count);
+  </script>
+</html>
