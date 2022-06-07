@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // var obj = {
+    //   a: {
+    //     b: {
+    //       c: 12,
+    //       j: false,
+    //     },
+    //     k: null,
+    //   },
+    // };
+
+    // let arr = { ...obj };
+    // let arr1 = [];
+    // console.log(arr);
+
+    // var obj = {
+    //   a: {
+    //     b: {
+    //       c: 12,
+    //       j: false,
+    //     },
+    //     k: null,
+    //   },
+    // };
+
+    // arr2 = {};
+    // for (let i = 0; i < arr.length; i++) {
+    //   arr2.push(i);
+    // }
+
+    // console.log(arr2);
+
+    var obj = {
+      a: {
+        b: {
+          c: 12,
+          j: false,
+        },
+        k: null,
+      },
+    };
+
+    let str = "a.b.c.d.e.f";
+    let newstr = str.split(".");
+
+    for (let i = 0; i < newstr.length; i++) {
+      if (obj[newstr[i]] !== undefined) {
+        obj = obj[newstr[i]];
+        console.log(obj);
+      } else {
+        console.log(undefined);
+      }
+    }
+  </script>
+</html>
